@@ -1,4 +1,4 @@
-import { userCreate } from "./alerts"
+import { createCorrect} from "./alerts"
 
 const $registerForm = document.getElementById("register-form")
 const $fullName = document.getElementById("name")
@@ -31,7 +31,7 @@ async function registerUser() {
             body: JSON.stringify(newUser)
         })
         if (responsive.status == 201) {
-            userCreate()
+            createCorrect("Se registro correctamente.")
             clearInputs()
             // window.location.href = "/dashboard.html"
         } else {

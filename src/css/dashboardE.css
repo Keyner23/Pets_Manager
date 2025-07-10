@@ -10,6 +10,7 @@
 body {
     background-color: #f0f4f8;
     color: #333;
+
 }
 
 header {
@@ -41,10 +42,11 @@ main {
     padding: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    height: 510px;
 }
 
-.task-form {
-    background-color: #ffffff;
+#task-list {
+    background-color: #2de77b4e;
     padding: 20px;
     border-radius: 12px;
     width: 400px;
@@ -63,7 +65,8 @@ main {
     gap: 15px;
 }
 
-.task-form input, select {
+.task-form input,
+select {
     padding: 10px;
     border: 1px solid #bbb;
     border-radius: 8px;
@@ -82,12 +85,12 @@ main {
     background-color: #2de77b;
 }
 
-.task-list {
+/* .task-list {
     background-color: #2de77b8e;
     width: 400px;
     padding: 20px;
     border-radius: 12px;
-}
+} */
 
 footer {
     text-align: center;
@@ -105,4 +108,12 @@ footer a {
 
 #request {
     height: 100px;
+}
+
+.task-item {
+    background-color: #f4f4f4;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

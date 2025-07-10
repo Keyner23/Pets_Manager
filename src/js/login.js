@@ -12,22 +12,26 @@ $btnLogin.addEventListener("click", function (event) {
 })
 
 async function login() {
-    let responsive = await fetch(`${urlApi}?email=${$email.value}`)
-    const data = await responsive.json()
+    try {
+        let responsive = await fetch(`${urlApi}?email=${$email.value}`)
+        const data = await responsive.json()
 
-    if (data.length != 1) {
-        errorUser()
-    }
-    if (data[0].password === $password.value) {
-        if (data[0].roleId === "2") {
-            window.location.href = "./dashboardT"
-        } else if (data[0].roleId === "1") {
-            window.location.href = "./dashboardE"
+        if (data.length != 1) {
+            errorUser()
         }
-        localStorage.setItem("currentUser", JSON.stringify(data[0]))
+        if (data[0].password === $password.value) {
+            if (data[0].roleId === "2") {
+                window.location.href = "./dashboardT"
+            } else if (data[0].roleId === "1") {
+                window.location.href = "./dashboardE"
+            }
+            localStorage.setItem("currentUser", JSON.stringify(data[0]))
+        }
+        else {
+            errorUser()
+        }
+    } catch (error) {
+
     }
-    else {
-        errorUser()
-    }
-    console.log(data)
+    // console.log(data)
 }

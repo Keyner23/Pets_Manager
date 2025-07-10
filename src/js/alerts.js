@@ -11,10 +11,10 @@ const Toast = Swal.mixin({
         toast.onmouseleave = Swal.resumeTimer;
     }
 });
-export function userCreate() {
+export function createCorrect(message) {
     Toast.fire({
         icon: "success",
-        title: "Usuario creado correctamente",
+        title: message,
     });
 }
 
