@@ -20,7 +20,7 @@ export function userCreate() {
 
 export function errorUser() {
     Swal.fire({
-        text: "El usuario no existe",
-        icon: "error"
+        text: "Verifique el  correo y contraseña ",
+        icon: "warning"
     });
 }

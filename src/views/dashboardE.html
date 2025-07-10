@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboardE.css" />
+    <title>Estudiante</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido estudiante a tu aula virtual</h1>
+        <a id="logoutBtn" href="/index.html"><button>Cerrar sesión</button></a>
+    </header>
+
+    <main>
+        <section class="task-form">
+            <h2>Realice su nueva tarea</h2>
+            <form action="#">
+                <input type="text" placeholder="Estudiante" disabled />
+                <label for="">Asignatura</label>
+                <select>
+                    <option value="">Quimica</option>
+                    <option value="">Matematicas</option>
+                    <option value="">Sociales</option>
+                </select>
+                <label>Escriba la pregunta aquí</label>
+                <input type="text" />
+                <label>Escriba su respuesta aquí</label>
+                <input type="text" id="request" />
+                <button type="submit">Enviar tarea</button>
+            </form>
+        </section>
+
+        <section class="task-list">
+            <!-- Aquí puedes mostrar las tareas -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Sistema creado por <a href="https://github.com/Keyner23">Keyner Barrios</a></p>
+    </footer>
+</body>
+
+</html>

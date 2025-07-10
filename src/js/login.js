@@ -19,11 +19,15 @@ async function login() {
         errorUser()
     }
     if (data[0].password === $password.value) {
+        if (data[0].roleId === "2") {
+            window.location.href = "./dashboardT"
+        } else if (data[0].roleId === "1") {
+            window.location.href = "./dashboardE"
+        }
         localStorage.setItem("currentUser", JSON.stringify(data[0]))
-        window.location.href = "./dashboard.html"
     }
     else {
-        alert("credenciales equivocadas.")
+        errorUser()
     }
     console.log(data)
 }

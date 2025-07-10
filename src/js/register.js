@@ -22,7 +22,8 @@ async function registerUser() {
         const newUser = {
             name: $fullName.value,
             email: $email.value,
-            password: $password.value
+            password: $password.value,
+            roleId: "1"
         }
         let responsive = await fetch(urlApi, {
             method: "POST",

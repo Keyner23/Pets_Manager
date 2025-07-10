@@ -1,16 +1,35 @@
 {
+  "roles": [
+    {
+      "id": "1",
+      "name": "estudiante"
+    },
+    {
+      "id": "2",
+      "name": "maestro"
+    }
+  ],
   "users": [
     {
       "id": "8ac3",
-      "name": "luis",
-      "email": "keyner@gamil.com",
-      "password": "1234"
+      "name": "Keyner",
+      "email": "keyner@gmail.com",
+      "password": "1234",
+      "roleId": "2"
     },
     {
       "id": "bdb5",
       "name": "carlos",
       "email": "carlos@gmail.com",
-      "password": "12345"
+      "password": "12345",
+      "roleId": "1"
+    },
+    {
+      "id": "35f7",
+      "name": "luis",
+      "email": "luis@gmail.com",
+      "password": "1234",
+      "roleId": "1"
     }
   ]
 }
