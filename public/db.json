@@ -16,30 +16,8 @@
       "email": "keyner@gmail.com",
       "password": "1234",
       "roleId": "2"
-    },
-    {
-      "id": "bdb5",
-      "name": "carlos",
-      "email": "carlos@gmail.com",
-      "password": "12345",
-      "roleId": "1"
-    },
-    {
-      "id": "27bd",
-      "name": "lorena",
-      "email": "lorena@gmail.com",
-      "password": "12345",
-      "roleId": "1"
     }
   ],
   "ask": [
-    {
-      "id": "e118",
-      "student": "",
-      "subject": "sociales",
-      "ask": "¿capital de colombia?",
-      "request": "Bogota",
-      "userId": "27bd"
-    }
   ]
 }

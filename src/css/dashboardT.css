@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+    font-family: "Zen Dots", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #2de77b9d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header button {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+#task-list {
+    width: 90%;
+    max-width: 900px;
+    background-color: #2de77b4e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-item {
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.task-item p {
+    margin-bottom: 8px;
+}
+
+.task-item label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.task-item input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    background-color: #2de77bbd;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #2de77b;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4caf50;
+}
